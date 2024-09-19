@@ -1,4 +1,41 @@
 @import './pricing.css';
 main{
     background-color:black;
+:root {
+    --background-color: #ff4d03;
+    --color: white;
+    --heading: #05bee2;
+    --background-light : #ffcf14;
+}
+
+header {
+    background-color: var(--background-color);
+
+    .navbar {
+        background: var(--background-color);
+        color: var(--color);
+
+        a {
+            color: var(--color);
+        }
+
+    }
+
+    .nav-link:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        margin-top: 0;
+    }
+
+    .rounded-full {
+        border-radius: 50px;
+    }
+
+    .navbar-brand {
+        img {
+            width: 100px;
+        }
+    }
 }
