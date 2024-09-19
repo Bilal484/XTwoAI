@@ -18,7 +18,7 @@
     }
 
     .img-with-text{
-        background-color: linear-gradient(90deg, #ff5e62, #f6d365, #12fff7, #b3ffab) ;
+        /* background: radial-gradient(circle, rgba(255, 77, 3, 0.8241421568627451) 0%, rgba(255, 207, 20, 0.7261029411764706) 50%, rgba(252, 176, 69, 0.2) 100%); */
     }
     .email-input {
         max-width: 450px;
