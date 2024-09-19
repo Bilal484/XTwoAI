@@ -1,5 +1,4 @@
 @import './pricing.css';
-@import './ai-agent.css';
 
 
 :root {
@@ -10,31 +9,18 @@
     --black: black;
 }
 
-.gradient-border {
-    position: relative;
-    padding: 5px;
-    background: linear-gradient(90deg, rgba(255, 77, 3, 1) 0%, rgba(255, 207, 20, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    border-radius: 20px;
-}
-
-.gradient-border::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    /* Adjust for border width */
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    background-color: #181818;
-    /* Inner content background */
+button {
+    background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+    color: white;
+    border: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    /* Match the radius of the border */
-    z-index: 1;
+    cursor: pointer;
+    transition: 1s all ease;
 }
 
-.gradient-border>* {
-    position: relative;
-    z-index: 2;
+button:hover {
+    background: linear-gradient(to right, #ffcf14, #ff4d03, #ffcf14);
 }
 
 
@@ -99,13 +85,19 @@ header {
         }
 
         .nav-link:focus,
-        .nav-link:hover {
-            color: var(--color-white);
+        .nav-link {
+            font-weight: 700;
+
+            &:hover {
+                color: var(--color-white);
+            }
+
         }
 
         .dropdown-menu {
 
             background-color: var(--black);
+
 
             .dropdown-item {
                 transition: 1s all ease;
@@ -141,6 +133,43 @@ header {
     }
 }
 
+
+
 main {
     background-color: black;
+
+    .bg_color_set h1 {
+        background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .gradient-border {
+        position: relative;
+        padding: 5px;
+        background: linear-gradient(90deg, rgba(255, 77, 3, 1) 0%, rgba(255, 207, 20, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        border-radius: 20px;
+    }
+
+    .gradient-border::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        /* Adjust for border width */
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        background-color: #181818;
+        /* Inner content background */
+        border-radius: 5px;
+        /* Match the radius of the border */
+        z-index: 1;
+    }
+
+    .gradient-border>* {
+        position: relative;
+        z-index: 2;
+    }
+
 }
