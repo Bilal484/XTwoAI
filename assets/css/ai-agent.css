@@ -4,13 +4,13 @@
         font-weight: 600;
         /* background-clip: ; */
         /* background: linear-gradient(90deg, #ff5e62, #f6d365, #12fff7, #b3ffab); */
-        color: white;
+        color: var(--heading);
         
     }
     h2{
         font-size: 45px;
         font-weight: 600;
-        color: rgb(230, 230, 230);
+        color: var(--heading);
     }
     
     p{
@@ -74,6 +74,9 @@
         .btn-ai-start {
           margin-top: 10px;
           width: 100%;
+        }
+        h1{
+            font-size: 40px;
         }
       }
       
