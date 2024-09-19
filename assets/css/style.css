@@ -9,10 +9,16 @@
     --background-light: #ffcf14;
     --black: black;
 }
-::selection{
-    color: #ffcf14 ;
+
+h2 {
+    color: var(--heading);
+}
+
+::selection {
+    color: #ffcf14;
     background-color: #a767e5;
 }
+
 button {
     background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
     color: white;
@@ -175,5 +181,80 @@ main {
         position: relative;
         z-index: 2;
     }
+
+    .icon-container i {
+        background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        /* Makes the text itself transparent so only the gradient shows */
+        font-size: 3rem;
+        /* Optional: Adjust the size of the icon */
+        transition: all 0.3s ease;
+    }
+
+    .icon-container i:hover {
+        /* color: #ff4d03;
+        -webkit-background-clip: unset;
+        background-clip: unset; */
+    }
+
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+        transition: color 0.3s ease;
+    }
+
+    .icon i {
+        font-size: 2rem;
+        transition: color 0.3s ease;
+        gap: 20px;
+    }
+
+    .icon:hover i.fab.fa-android {
+        color: #3ddc84;
+        /* Android official color */
+    }
+
+    .icon:hover i.fab.fa-apple {
+        color: #000000;
+        /* iOS official color */
+    }
+
+    .icon:hover i.fab.fa-windows {
+        color: #00a4ef;
+        /* Windows official color */
+    }
+
+    .icon:hover i.fab.fa-linux {
+        color: #fcc624;
+        /* Linux official color */
+    }
+
+    .icon:hover i.fab.fa-chrome {
+        color: #4285f4;
+        /* Chrome official color */
+    }
+
+    .icon:hover i.fab.fa-firefox {
+        color: #ff7139;
+        /* Firefox official color */
+    }
+
+    .icon:hover i.fab.fa-edge {
+        color: #0078d7;
+        /* Edge official color */
+    }
+
+    .icon span {
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+
+
 
 }
