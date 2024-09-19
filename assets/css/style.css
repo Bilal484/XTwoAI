@@ -1,6 +1,6 @@
 @import './pricing.css';
-main{
-    background-color:black;
+
+
 :root {
     --background-color: #ff4d03;
     --color: white;
@@ -63,4 +63,7 @@ header {
         }
     }
 }
+
+main {
+    background-color: black;
 }
