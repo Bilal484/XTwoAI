@@ -1,4 +1,5 @@
 @import './pricing.css';
+@import './ai-agent.css';
 
 
 :root {
@@ -8,7 +9,10 @@
     --background-light: #ffcf14;
     --black: black;
 }
-
+::selection{
+    color: #ffcf14 ;
+    background-color: #a767e5;
+}
 button {
     background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
     color: white;
