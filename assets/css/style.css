@@ -160,17 +160,44 @@
         }
     }
 
-    main {
-        background-color: black;
+    .gradient-border {
+        position: relative;
+        padding: 5px;
+        background: linear-gradient(90deg, rgba(255, 77, 3, 1) 0%, rgba(255, 207, 20, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        border-radius: 20px;
+    }
 
-        .bg_color_set h1 {
-            background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+    .gradient-border::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        /* Adjust for border width */
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        background-color: #181818;
+        /* Inner content background */
+        border-radius: 5px;
+        /* Match the radius of the border */
+        z-index: 1;
+    }
+
+    .gradient-border>* {
+        position: relative;
+        z-index: 2;
+
+        main {
+            background-color: black;
+
+            .bg_color_set h1 {
+                background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
+
+
         }
-
-
-
     }
 }
