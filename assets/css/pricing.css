@@ -1,117 +1,195 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
-.pricing5 {
-  font-family: "Montserrat", sans-serif;
-  color: #8d97ad;
-  font-weight: 300;
- 
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.pricing5 h1,
-.pricing5 h2,
-.pricing5 h3,
-.pricing5 h4,
-.pricing5 h5,
-.pricing5 h6 {
-  color: #3e4555;
+.center-heading {
+  text-align: center;
 }
 
-.pricing5 h5 {
-	line-height: 22px;
-	font-size: 18px;
+.center-heading .section-title {
+  font-weight: 400;
+  font-size: 28px;
+  color: white;
+  letter-spacing: 1.75px;
+  line-height: 38px;
+  margin-bottom: 20px;
 }
 
-.pricing5 .font-weight-medium {
-  font-weight: 500;
+.center-heading.colored .section-title {
+  color: #ffffff;
 }
 
-.pricing5 .bg-light {
-  background-color: #f4f8fa !important;
+.center-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
 }
 
-.pricing5 .subtitle {
-  color: #8d97ad;
-  line-height: 24px;
+.center-text.colored {
+  color: #FFC0EB;
 }
 
-.pricing5 .card.card-shadow {
-  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+.center-text p {
+  margin-bottom: 30px;
 }
 
-.pricing5 .general-listing {
-  margin: 90px 0 60px 0;
+.pricing-item {
+  background: rgba(100, 100, 100, 0.493);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
-.pricing5 .card {
-  background-size: 100% !important;
+.pricing-item.active .pricing-header {
+  position: relative;
 }
 
-.pricing5 .yearly {
-  display: none;
+.pricing-item.active .pricing-header .pricing-title {
+  color: #fff;
 }
 
-.pricing5 .pricing-box {
-  margin-top: 120px;
+.pricing-item.active .pricing-body .price-wrapper {
+    background: linear-gradient(135deg, #ff4d03, #ffcf14, #05bee2);
+
 }
 
-.pricing5 .pricing-box .middle-box {
-  margin-top: -75px;
+.pricing-item.active .pricing-body .price-wrapper .currency {
+  color: #fff;
 }
 
-.pricing5 .pricing-box .middle-box .general-listing {
-  margin-top: 60px;
+.pricing-item.active .pricing-body .price-wrapper .price {
+  color: #fff;
 }
 
-@media (max-width: 767px) {
-  .pricing5 .pricing-box {
-    margin-top: 40px;
-  }
-  .pricing5 .pricing-box .middle-box {
-    margin-top: 0px;
-  }
+.pricing-item.active .pricing-body .price-wrapper .period {
+  color: #fff;
 }
 
-.pricing5 .btn-success-gradiant {
-		background: #2cdd9b;
-    background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
-    background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
-    background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
-    background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+.pricing-item .pricing-header {
+  text-align: center;
+  display: block;
+  position: relative;
+  padding-bottom: 10px;
 }
 
-.pricing5 .btn-success-gradiant:hover {
-		background: #1dc8cc;
-    background: -webkit-linear-gradient(legacy-direction(to right), #1dc8cc 0%, #2cdd9b 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#1dc8cc), to(#2cdd9b));
-    background: -webkit-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
-    background: -o-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
-    background: linear-gradient(to right, #1dc8cc 0%, #2cdd9b 100%);
+.pricing-item .pricing-header .pricing-title {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  top: -20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: radial-gradient(circle, #ff4d03, #ffcf14);
+
 }
 
-.pricing5 .btn-md {
-    padding: 15px 45px;
-    font-size: 16px;
+.pricing-item .pricing-body {
+  margin-bottom: 40px;
 }
 
-.pricing5 .rounded-left {
-		border-top-left-radius: 60px!important;
-    border-bottom-left-radius: 60px!important;
+.pricing-item .pricing-body .price-wrapper {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  background: #f6f6f6;
 }
 
-.pricing5 .rounded-right {
-		border-top-right-radius: 60px!important;
-    border-bottom-right-radius: 60px!important;
+.pricing-item .pricing-body .price-wrapper .currency {
+  height: 47px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #e64b3d;
+  position: relative;
+  top: -15px;
 }
 
-.pricing5 .btn-outline-success {
-    color: #2cdd9b;
-    background-color: transparent;
-    border-color: #2cdd9b;
+.pricing-item .pricing-body .price-wrapper .price {
+  font-weight: 700;
+  font-size: 34px;
+  color: #e64b3d;
+  letter-spacing: 2.12px;
 }
 
-.pricing5 .btn-outline-success:hover {
-    background: #2cdd9b;
-    border-color: #2cdd9b;
-    color: #ffffff;
+.pricing-item .pricing-body .price-wrapper .period {
+  font-weight: 700;
+  font-size: 14px;
+  color: #e64b3d;
+  letter-spacing: 0.88px;
+}
+
+.pricing-item .pricing-body .list li {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #CCDCEA;
+  letter-spacing: 0.88px;
+  text-decoration: line-through;
+}
+
+.pricing-item .pricing-body .list li.active {
+  color: white;
+  text-decoration: none;
+}
+
+.pricing-item .pricing-footer {
+  text-align: center;
+}
+
+.btn-primary-line {
+    width: 160px;
+    margin: auto;
+    display: inline-block;
+    height: 44px;
+    line-height: 45px;
+    text-align: center;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    outline: none !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    position: relative;
+}
+.pricing-item .pricing-footer .btn-primary-line {
+  border: 1px solid #e64b3d;
+  color: #e64b3d;
+  height: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  
+}
+
+.pricing-item .pricing-footer .btn-primary-line:hover {
+  background: #e64b3d;
+  color: #fff;
 }
