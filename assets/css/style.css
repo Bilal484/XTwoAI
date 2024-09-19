@@ -1,1 +1,4 @@
-@import './pricing.css'
+@import './pricing.css';
+main{
+    background-color:black;
+}
