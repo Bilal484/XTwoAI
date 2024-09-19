@@ -4,16 +4,19 @@
         font-weight: 600;
         /* background-clip: ; */
         /* background: linear-gradient(90deg, #ff5e62, #f6d365, #12fff7, #b3ffab); */
-        color: white;
+        color: var(--heading);
         
     }
     h2{
         font-size: 45px;
         font-weight: 600;
-        color: rgb(230, 230, 230);
+        color: var(--heading);
     }
     
     p{
+        color: gray;
+    }
+    ul li {
         color: gray;
     }
 
@@ -60,6 +63,8 @@
         color: white;
         box-shadow: 0 4px 12px rgba(255, 94, 98, 0.3);
       }
+
+      
       
       @media (max-width: 576px) {
         .email-input {
@@ -69,6 +74,14 @@
         .btn-ai-start {
           margin-top: 10px;
           width: 100%;
+        }
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: 600;
+            color: var(--heading);
         }
       }
       
