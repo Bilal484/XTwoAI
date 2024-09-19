@@ -1,4 +1,5 @@
 @import './pricing.css';
+@import './ai-agent.css';
 
 
 :root {
@@ -9,140 +10,167 @@
     --black: black;
 }
 
-button {
-    background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 1s all ease;
-}
-
-button:hover {
-    background: linear-gradient(to right, #ffcf14, #ff4d03, #ffcf14);
-}
-
-
-header {
-    background: rgb(255, 77, 3);
+.gradient-border {
+    position: relative;
+    padding: 5px;
     background: linear-gradient(90deg, rgba(255, 77, 3, 1) 0%, rgba(255, 207, 20, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-radius: 20px;
+}
 
-    .navbar {
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    /* Adjust for border width */
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: #181818;
+    /* Inner content background */
+    border-radius: 5px;
+    /* Match the radius of the border */
+    z-index: 1;
+}
+
+.gradient-border>* {
+    position: relative;
+    z-index: 2;
+
+    button {
+        background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s all ease;
+    }
+
+    button:hover {
+        background: linear-gradient(to right, #ffcf14, #ff4d03, #ffcf14);
+    }
+
+
+    header {
         background: rgb(255, 77, 3);
-        background: radial-gradient(circle, rgba(255, 77, 3, 0.8241421568627451) 0%, rgba(255, 207, 20, 0.7261029411764706) 50%, rgba(252, 176, 69, 1) 100%);
-        color: var(--color);
+        background: linear-gradient(90deg, rgba(255, 77, 3, 1) 0%, rgba(255, 207, 20, 1) 50%, rgba(252, 176, 69, 1) 100%);
 
-        .codepen-button {
-            display: block;
-            cursor: pointer;
-            color: white;
-            margin: 0 auto;
-            position: relative;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 6px;
-            overflow: hidden;
-            padding: 3px;
-            isolation: isolate;
-        }
+        .navbar {
+            background: rgb(255, 77, 3);
+            background: radial-gradient(circle, rgba(255, 77, 3, 0.8241421568627451) 0%, rgba(255, 207, 20, 0.7261029411764706) 50%, rgba(252, 176, 69, 1) 100%);
+            color: var(--color);
 
-        .codepen-button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 400%;
-            height: 100%;
-            background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
-            background-size: 25% 100%;
-            animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
-            animation-play-state: paused;
-            translate: -5% 0%;
-            transition: translate 0.25s ease-out;
-        }
-
-        .codepen-button:hover::before {
-            animation-play-state: running;
-            transition-duration: 0.75s;
-            translate: 0% 0%;
-        }
-
-        @keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
-            to {
-                transform: translateX(-25%);
-            }
-        }
-
-        .codepen-button span {
-            position: relative;
-            display: block;
-            padding: 10px 15px;
-            font-size: 1.1rem;
-            background: #000;
-            border-radius: 3px;
-            height: 100%;
-        }
-
-        .nav-link:focus,
-        .nav-link {
-            font-weight: 700;
-
-            &:hover {
-                color: var(--color-white);
+            .codepen-button {
+                display: block;
+                cursor: pointer;
+                color: white;
+                margin: 0 auto;
+                position: relative;
+                text-decoration: none;
+                font-weight: 600;
+                border-radius: 6px;
+                overflow: hidden;
+                padding: 3px;
+                isolation: isolate;
             }
 
+            .codepen-button::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 400%;
+                height: 100%;
+                background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+                background-size: 25% 100%;
+                animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+                animation-play-state: paused;
+                translate: -5% 0%;
+                transition: translate 0.25s ease-out;
+            }
+
+            .codepen-button:hover::before {
+                animation-play-state: running;
+                transition-duration: 0.75s;
+                translate: 0% 0%;
+            }
+
+            @keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+                to {
+                    transform: translateX(-25%);
+                }
+            }
+
+            .codepen-button span {
+                position: relative;
+                display: block;
+                padding: 10px 15px;
+                font-size: 1.1rem;
+                background: #000;
+                border-radius: 3px;
+                height: 100%;
+            }
+
+            .nav-link:focus,
+            .nav-link {
+                font-weight: 700;
+
+                &:hover {
+                    color: var(--color-white);
+                }
+
+            }
+
+            .dropdown-menu {
+
+                background-color: var(--black);
+
+
+                .dropdown-item {
+                    transition: 1s all ease;
+                    color: var(--color-white);
+                    font-size: 14px;
+                }
+
+                .dropdown-item:hover {
+                    background-color: var(--background-color);
+                    border-radius: 10px;
+                    color: var(--color-white);
+                }
+            }
+
+        }
+
+        .nav-link:hover .dropdown-menu {
+            display: block;
         }
 
         .dropdown-menu {
-
-            background-color: var(--black);
-
-
-            .dropdown-item {
-                transition: 1s all ease;
-                color: var(--color-white);
-                font-size: 14px;
-            }
-
-            .dropdown-item:hover {
-                background-color: var(--background-color);
-                border-radius: 10px;
-                color: var(--color-white);
-            }
+            margin-top: 0;
         }
 
-    }
+        .rounded-full {
+            border-radius: 50px;
+        }
 
-    .nav-link:hover .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown-menu {
-        margin-top: 0;
-    }
-
-    .rounded-full {
-        border-radius: 50px;
-    }
-
-    .navbar-brand {
-        img {
-            width: 120px;
+        .navbar-brand {
+            img {
+                width: 120px;
+            }
         }
     }
-}
 
-main {
-    background-color: black;
+    main {
+        background-color: black;
 
-    .bg_color_set h1 {
-        background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+        .bg_color_set h1 {
+            background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+
+
     }
-
-
-
 }
