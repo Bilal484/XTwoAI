@@ -63,7 +63,7 @@ li {
   padding: 0;
   margin: 0;
   list-style: none;
-  color: var(--color-white);
+  color: black;
 }
 .active{
   color: red;
