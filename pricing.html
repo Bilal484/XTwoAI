@@ -25,7 +25,7 @@
         <div class="top"></div>
         <div class="container">
           <!-- ***** Section Title Start ***** -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-12">
               <div class="center-heading">
                 <h2 class="section-title  fw-bold">XTwo Pricing Plans</h2>
@@ -36,11 +36,117 @@
                 <p>Find the right plan for your business, with affordable options to fit any budget.</p>
               </div>
             </div>
+          </div> -->
+
+          <div class="container my-5">
+            <div class="pricing-header">
+              <h1>XTwo Pricing Plans</h1>
+              <p>Find the right plan for your business, with affordable options to fit any budget.</p>
+            </div>
+            <div class="toggle d-flex justify-content-center mb-4">
+              <button class="btn btn-outline-secondary me-2" onclick="showPricing('yearly')">ANNUALLY</button>
+              <button class="btn btn-outline-secondary" onclick="showPricing('monthly')">MONTHLY</button>
+            </div>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4" data-plan="yearly">
+                <div class="pricing-card text-center p-4">
+                  <h4>Free</h4>
+                  <p>For individuals trying automation with our drag-and-drop interface</p>
+                  <h2>$0/mo</h2>
+                  <p class="text-muted">Billed yearly</p>
+                  <select class="form-select mb-3">
+                    <option>1,000 Ops/month</option>
+                  </select>
+                  <button class="btn btn-purple w-100 mb-4">Get started</button>
+                  <ul class="features-list text-start">
+                    <li>✔ No-code visual workflow builder</li>
+                    <li>✔ 1000+ apps</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row g-4">
+                <!-- Starter Package -->
+                <div class="col-md-6 col-lg-4" data-plan="monthly">
+                  <div class="pricing-card h-100 text-center p-4">
+                    <h4>Starter Package</h4>
+                    <p>Perfect for individuals and small teams</p>
+                    <h2>RM 899/month</h2>
+                    <p class="text-muted">Billed monthly</p>
+                    <select class="form-select mb-3">
+                      <option>RM 9,588/yearly</option>
+                      <option>RM 899/monthly</option>
+                    </select>
+                    <button class="btn btn-purple w-100 mb-4">Get Started</button>
+                    <ul class="features-list text-start">
+                      <li>✔ 1 AI agent</li>
+                      <li>✔ 1-month context period</li>
+                      <li>✔ 5 GB data storage</li>
+                      <li>✔ 500 CRM contacts limit</li>
+                      <li>✔ 6,000 conversations per month</li>
+                      <li>✔ 1 mobile number connection</li>
+                      <li>✔ Customer support: Live chat</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Professional Package -->
+                <div class="col-md-6 col-lg-4" data-plan="monthly">
+                  <div class="pricing-card h-100 text-center p-4">
+                    <h4>Professional Package</h4>
+                    <p>Ideal for growing teams and businesses</p>
+                    <h2>RM 1,499/month</h2>
+                    <p class="text-muted">Billed monthly</p>
+                    <select class="form-select mb-3">
+                      <option>RM 15,588/yearly</option>
+                      <option>RM 1,499/monthly</option>
+                    </select>
+                    <button class="btn btn-purple w-100 mb-4">Upgrade Now</button>
+                    <ul class="features-list text-start">
+                      <li>✔ 5 AI agents</li>
+                      <li>✔ 3-month context period</li>
+                      <li>✔ 5 GB data storage</li>
+                      <li>✔ Unlimited CRM contacts</li>
+                      <li>✔ 30,000 conversations per month</li>
+                      <li>✔ 5 mobile number connections</li>
+                      <li>✔ Customer support: Live chat</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="col-md-6 col-lg-4" data-plan="monthly">
+                  <div class="pricing-card h-100 text-center p-4 card-enterprise">
+                    <h4>Enterprise Package</h4>
+                    <p>Best for large-scale operations</p>
+                    <h2>RM 2,099/month</h2>
+                    <p class="text-muted">Billed monthly</p>
+                    <select class="form-select mb-3">
+                      <option>RM 22,788/yearly</option>
+                      <option>RM 2,099/monthly</option>
+                    </select>
+                    <button class="btn btn-light w-100 mb-4">Contact Us for a Quote</button>
+                    <ul class="features-list text-start">
+                      <li>✔ 12 AI agents</li>
+                      <li>✔ 6-month context period</li>
+                      <li>✔ 10 GB data storage</li>
+                      <li>✔ Unlimited CRM contacts</li>
+                      <li>✔ 60,000 conversations per month</li>
+                      <li>✔ 10 mobile number connections</li>
+                      <li>✔ Customer support: Live chat + monthly business advisor support</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Add more plans similarly... -->
+            </div>
           </div>
+
+
           <!-- ***** Section Title End ***** -->
 
-          <div class="row">
-            <!-- ***** Starter Package Start ***** -->
+          <!-- <div class="row">
+            
             <div class="col-lg-4  col-md-6">
               <div class="pricing-item h-100">
                 <div class="pricing-header">
@@ -67,9 +173,7 @@
                 </div>
               </div>
             </div>
-            <!-- ***** Starter Package End ***** -->
-
-            <!-- ***** Professional Package Start ***** -->
+           
             <div class="col-lg-4  col-md-6">
               <div class="pricing-item h-100 active">
                 <div class="pricing-header">
@@ -96,9 +200,7 @@
                 </div>
               </div>
             </div>
-            <!-- ***** Professional Package End ***** -->
-
-            <!-- ***** Enterprise Package Start ***** -->
+           
             <div class="col-lg-4  col-md-6">
               <div class="pricing-item h-100 ">
                 <div class="pricing-header">
@@ -125,8 +227,8 @@
                 </div>
               </div>
             </div>
-            <!-- ***** Enterprise Package End ***** -->
-          </div>
+           
+          </div> -->
         </div>
       </section>
 
@@ -279,7 +381,7 @@
       </section>]
       <section>
 
-        <div class="container mt-5">
+        <div class="container my-5">
           <h2 class="mb-4">Frequently Asked Questions (FAQs)</h2>
 
           <div class="accordion" id="faqAccordion">
@@ -468,10 +570,24 @@
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+  <script>
+    function showPricing(type) {
+      const allPlans = document.querySelectorAll('[data-plan]');
+      allPlans.forEach(plan => {
+        if (plan.getAttribute('data-plan') === type) {
+          plan.classList.remove('hidden');
+        } else {
+          plan.classList.add('hidden');
+        }
+      });
+    }
+    // Initialize with yearly pricing
+    showPricing('yearly');
   </script>
   <!-- <script src="assets/css/js/pricing.js"></script> -->
 </body>

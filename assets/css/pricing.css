@@ -1,11 +1,62 @@
-:root {
-  --background-color: #ff4d03;
-  --color-white: white;
-  --heading: #05bee2;
-  --background-light: #ffcf14;
-  --black: black;
+.pricing-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.pricing-header h1 {
+  font-weight: bold;
+  color: var(--heading);
+}
+.btn-purple {
+  background-color: var(--background-light);
+  color: var(--black);
+}
+.btn-purple:hover {
+  background-color: var(--black);
+  color: var(--color-white);
+}
+.recommended {
+  background-color: var(--background-light);
+  border: 2px solid var(--black);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--black);
+}
+.toggle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pricing-card {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.card-enterprise .btn {
+  background-color: var(--color-white);
+  color: var(--black);
+  border: none;
+}
+.card-enterprise .btn:hover {
+  background-color: var(--background-light);
+  color: var(--black);
+}
+.features-list {
+  list-style: none;
+  padding-left: 0;
+}
+.features-list li {
+  margin-bottom: 10px;
+}
+.text-muted {
+  color: #6c757d !important;
+}
+.hidden {
+  display: none;
+}
 
 ul,
 li {
