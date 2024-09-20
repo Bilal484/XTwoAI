@@ -272,7 +272,7 @@ li {
   .pricing-table td {
     padding: 20px;
     vertical-align: middle;
-    color: var(--background-color);
+    color: var(--black);
   }
 
   /* Define background colors for each plan */
