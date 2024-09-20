@@ -1,0 +1,27 @@
+.faqOne{
+    /* h1 {
+        font-size: 2rem;
+        color: #333;
+    } */
+     
+    
+    .big-text {
+        font-size: 4rem;
+        color: white;
+        font-weight: bold;
+    }
+
+
+    .waves-section{
+        position: relative;
+        bottom: 500px;
+        /* z-index:; */
+        height: 86px;
+
+      
+      
+    }
+
+    
+    
+}
