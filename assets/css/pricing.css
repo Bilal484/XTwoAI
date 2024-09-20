@@ -260,7 +260,11 @@ li {
   background: #e64b3d;
   color: #fff;
 }
-
+.pricing-main{
+  position: relative;
+  bottom: 500px;
+  
+}
 
 .pricing_amount {
   background-color: transparent;
@@ -311,4 +315,18 @@ li {
   td {
     font-size: 1.1rem;
   }
+}
+.text-main{
+  color: white;
+}
+@media (min-width:320px) and (max-width:720px){
+  .pricing-main{
+    position: relative;
+    bottom: 50px;
+    
+  }
+  .text-main{
+    color: black;
+  }
+
 }
