@@ -272,32 +272,33 @@ li {
   .pricing-table td {
     padding: 20px;
     vertical-align: middle;
+    color: var(--background-color);
   }
 
   /* Define background colors for each plan */
   .free {
-    background-color: var(--background-color);
+    background-color: var(--background-light);
   }
 
   .core {
-    background-color: var(--background-color);
+    background-color: var(--background-light);
   }
 
   .pro {
-    background-color: var(--background-color);
+    background-color: var(--background-light);
   }
 
   .teams {
-    background-color: var(--background-color);
+    background-color: var(--background-light);
   }
 
   .enterprise {
-    background-color: var(--background-color);
+    background-color: var(--background-light);
   }
 
   /* Ensure icon colors match */
   .fa-check {
-    color: var(--heading);
+    color: var(--background-light);
   }
 
   /* Additional styles */

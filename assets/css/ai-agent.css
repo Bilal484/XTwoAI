@@ -1,25 +1,5 @@
 .main-ai-agent{
-    h1{
-        font-size: 72px;
-        font-weight: 600;
-        /* background-clip: ; */
-        /* background: linear-gradient(90deg, #ff5e62, #f6d365, #12fff7, #b3ffab); */
-        color: var(--background-color);
-        
-    }
-    /* h2{
-        font-size: 45px;
-        font-weight: 600;
-        color: var(--background-color);
-    }
-    
-    p{
-        color: gray;
-    }
-    ul li {
-        color: gray;
-    } */
-
+   
     .img-with-text{
         /* background: radial-gradient(circle, rgba(255, 77, 3, 0.8241421568627451) 0%, rgba(255, 207, 20, 0.7261029411764706) 50%, rgba(252, 176, 69, 0.2) 100%); */
     }
@@ -50,7 +30,7 @@
       }
       
       .btn-ai-start {
-        background: linear-gradient(90deg, #b3ffab, #12fff7, #f6d365, #ff5e62);
+        background: linear-gradient(90deg, #f6d365, #ff5e62);
         color: white;
         border-radius: 30px;
         padding-left: 20px;
@@ -59,7 +39,7 @@
       }
       
       .btn-ai-start:hover {
-        background: linear-gradient(90deg, #ff5e62, #f6d365, #12fff7, #b3ffab);
+        background: linear-gradient(90deg, #ff5e62, #f6d365);
         color: white;
         box-shadow: 0 4px 12px rgba(255, 94, 98, 0.3);
       }

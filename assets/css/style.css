@@ -57,7 +57,7 @@ h1 {
 
 button {
     /* background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03); */
-    background-color: var(--heading) !important;
+    background-color: var(--background-light) !important;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -69,7 +69,8 @@ button {
 
 button:hover {
     /* background: linear-gradient(to right, #ffcf14, #ff4d03, #ffcf14); */
-    background-color: var(--background-light) !important;
+    background-color: var(--background-color) !important;
+    color: white;
 
 }
 
