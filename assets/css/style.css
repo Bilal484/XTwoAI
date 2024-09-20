@@ -12,7 +12,7 @@
 }
 
 h2 {
-    color: var(--heading);
+    color: var(--background-color);
 }
 
 ::selection {
@@ -147,7 +147,7 @@ header {
 
 
 main {
-    background-color: black;
+    background-color: white;
 
     .bg_color_set h1 {
         background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
