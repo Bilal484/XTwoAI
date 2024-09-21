@@ -15,7 +15,7 @@
     .waves-section{
         position: absolute;
         bottom: 100px;
-        left: 64px;
+        left: 40px;
 
         /* z-index:; */
     }
@@ -35,8 +35,6 @@
     }
     .waves-section{
         position: absolute;
-        /* bottom: 0px; */
-        /* z-index:; */
         top: 12px;
         left: 40px;
     }
@@ -70,10 +68,7 @@
         }
         .waves-section{
             position: relative;
-            bottom: -300px;
             left: 0px;
-    
-            /* z-index:; */
         }
         
     }
@@ -84,8 +79,6 @@
         }
         .waves-section{
             position: absolute;
-            /* bottom: 0px; */
-            /* z-index:; */
             top: 12px;
             left: 0px;
         }
