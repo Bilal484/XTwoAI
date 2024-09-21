@@ -9,20 +9,43 @@
         color: white;
     }
 
-
-
-    .waves-section{
+    .svg-section{
         position: relative;
-        bottom: 500px;
+    }
+    .waves-section{
+        position: absolute;
+        bottom: 100px;
+        left: 40px;
+
         /* z-index:; */
+    }
+    .accordion-header button{
+        color: white;
+        font-weight: 600;
+    }
+    .accordion-header button:hover{
+        color: black;
+        font-weight: 600;
     }
 }
 
 .faqTwo{
-    .waves-section{
+    .svg-section{
         position: relative;
-        bottom: 250px;
-        /* z-index:; */
+    }
+    .waves-section{
+        position: absolute;
+        top: 12px;
+        left: 40px;
+    }
+
+    .accordion-header button{
+        color: white;
+        font-weight: 600;
+    }
+    .accordion-header button:hover{
+        color: black;
+        font-weight: 600;
     }
 
 }
@@ -40,20 +63,26 @@
         }
     
     
+        .svg-section{
+            position: relative;
+        }
         .waves-section{
             position: relative;
-            bottom: 50px;
-            /* z-index:; */
+            left: 0px;
         }
+        
     }
     
     .faqTwo{
-        .waves-section{
+        .svg-section{
             position: relative;
-            bottom: 50px;
-            /* z-index:; */
         }
-    
+        .waves-section{
+            position: absolute;
+            top: 12px;
+            left: 0px;
+        }
+
     }
     
 

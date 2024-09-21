@@ -260,14 +260,19 @@ li {
   background: #e64b3d;
   color: #fff;
 }
-.pricing-main{
+.pricing-parent{
   position: relative;
-  bottom: 500px;
-  
+}
+
+.pricing-main{
+  position: absolute;
+  top: 150px;
+  left: 70px;
 }
 
 .pricing_amount {
   background-color: transparent;
+  margin-top: 27rem;
   .pricing-table {
     text-align: center;
   }
@@ -327,6 +332,18 @@ li {
   }
   .text-main{
     color: black;
+  }
+
+  
+  .pricing-main{
+    position: relative;
+    top: 15px;
+    left: 0px;
+  }
+  
+  .pricing_amount{
+    margin-top: 5rem;
+
   }
 
 }
