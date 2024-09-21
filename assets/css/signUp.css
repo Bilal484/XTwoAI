@@ -53,7 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--heading) !important;
+    background-color: #f88501 !important;
     color: white !important;
 
     &:hover {
