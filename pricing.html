@@ -108,43 +108,86 @@
           <!-- ***** Section Title Start ***** -->
 
           <div class="container  my-5">
-            <div class="pricing-header">
-              <h2 class="text-main shadow p-4">XTwo Pricing Plans</h2>
+            <div class="pricing-header shadow p-4">
+              <h2 class="text-main  ">XTwo Pricing Plans</h2>
               <p class="text-main">Find the right plan for your business, with affordable options to fit any budget.</p>
             </div>
             <div class="toggle d-flex justify-content-center mb-4">
-              <button class="btn shadow  bg-light  me-2" onclick="showPricing('yearly')">ANNUALLY</button>
-              <button class="btn shadow  bg-light " onclick="showPricing('monthly')">MONTHLY</button>
+              <button class="btn shadow  bg-light me-2" onclick="showPricing('monthly')">MONTHLY</button>
+              <button class="btn shadow  bg-light  " onclick="showPricing('yearly')">YEARLY</button>
             </div>
-            <div class="row g-4">
-              <div class="col-md-6 gradient-border col-lg-4" data-plan="yearly">
-                <div class="pricing-card text-center p-4">
-                  <h4>Free</h4>
-                  <p>For individuals trying automation with our drag-and-drop interface</p>
-                  <h2>$0/mo</h2>
-                  <p class="text-muted">Billed yearly</p>
-                  <select class="form-select mb-3">
-                    <option>1,000 Ops/month</option>
-                  </select>
-                  <button class="btn btn-purple w-100 mb-4">Get started</button>
-                  <ul class="features-list text-start">
-                    <li>✔ No-code visual workflow builder</li>
-                    <li>✔ 1000+ apps</li>
-                  </ul>
+              <div class="row  ">
+                <!-- Starter Package -->
+                <div class="col-md-6 gradient-border col-lg-4  my-md-0 my-3" data-plan="yearly">
+                  <div class="pricing-card h-100 text-center p-4">
+                    <h4>Starter Package</h4>
+                    <p>Perfect for individuals and small teams</p>
+                    <h2>RM 9,588/yearly</h2>
+                    <p class="text-muted">Billed yearly</p>
+                    
+                    <button class="btn btn-purple w-100 mb-4">Get Started</button>
+                    <ul class="features-list text-start">
+                      <li>✔ 1 AI agent</li>
+                      <li>✔ 1-yearly context period</li>
+                      <li>✔ 5 GB data storage</li>
+                      <li>✔ 500 CRM contacts limit</li>
+                      <li>✔ 6,000 conversations per month</li>
+                      <li>✔ 1 mobile number connection</li>
+                      <li>✔ Customer support: Live chat</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Professional Package -->
+                <div class="col-md-6 gradient-border col-lg-4  my-md-0 my-3" data-plan="yearly">
+                  <div class="pricing-card h-100 text-center p-4">
+                    <h4>Professional Package</h4>
+                    <p>Ideal for growing teams and businesses</p>
+                    <h2>RM 15,588/yearly</h2>
+                    <p class="text-muted">Billed yearly</p>
+                    <button class="btn btn-purple w-100 mb-4">Upgrade Now</button>
+                    <ul class="features-list text-start">
+                      <li>✔ 5 AI agents</li>
+                      <li>✔ 3-yearly context period</li>
+                      <li>✔ 5 GB data storage</li>
+                      <li>✔ Unlimited CRM contacts</li>
+                      <li>✔ 30,000 conversations per yearly</li>
+                      <li>✔ 5 mobile number connections</li>
+                      <li>✔ Customer support: Live chat</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="col-md-6 gradient-border col-lg-4  my-md-0 my-3" data-plan="yearly">
+                  <div class="pricing-card h-100 text-center p-4 card-enterprise">
+                    <h4>Enterprise Package</h4>
+                    <p>Best for large-scale operations</p>
+                    <h2>RM 22,788/yearly</h2>
+                    <p class="text-muted">Billed yearly</p>
+                  
+                    <button class="btn w-100 mb-4">Contact Us for a Quote</button>
+                    <ul class="features-list text-start">
+                      <li>✔ 12 AI agents</li>
+                      <li>✔ 6-yearly context period</li>
+                      <li>✔ 10 GB data storage</li>
+                      <li>✔ Unlimited CRM contacts</li>
+                      <li>✔ 60,000 conversations per yearly</li>
+                      <li>✔ 10 mobile number connections</li>
+                      <li>✔ Customer support: Live chat + yearly business advisor support</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="row g-4">
+              <div class="row  ">
                 <!-- Starter Package -->
-                <div class="col-md-6 gradient-border col-lg-4" data-plan="monthly">
+                <div class="col-md-6 gradient-border col-lg-4  my-md-0 my-3" data-plan="monthly">
                   <div class="pricing-card h-100 text-center p-4">
                     <h4>Starter Package</h4>
                     <p>Perfect for individuals and small teams</p>
                     <h2>RM 899/month</h2>
                     <p class="text-muted">Billed monthly</p>
-                    <select class="form-select mb-3">
-                      <option>RM 9,588/yearly</option>
-                      <option>RM 899/monthly</option>
-                    </select>
+                    
                     <button class="btn btn-purple w-100 mb-4">Get Started</button>
                     <ul class="features-list text-start">
                       <li>✔ 1 AI agent</li>
@@ -159,16 +202,13 @@
                 </div>
 
                 <!-- Professional Package -->
-                <div class="col-md-6 gradient-border col-lg-4" data-plan="monthly">
+                <div class="col-md-6 gradient-border col-lg-4  my-md-0 my-3" data-plan="monthly">
                   <div class="pricing-card h-100 text-center p-4">
                     <h4>Professional Package</h4>
                     <p>Ideal for growing teams and businesses</p>
                     <h2>RM 1,499/month</h2>
                     <p class="text-muted">Billed monthly</p>
-                    <select class="form-select mb-3">
-                      <option>RM 15,588/yearly</option>
-                      <option>RM 1,499/monthly</option>
-                    </select>
+                  
                     <button class="btn btn-purple w-100 mb-4">Upgrade Now</button>
                     <ul class="features-list text-start">
                       <li>✔ 5 AI agents</li>
@@ -183,16 +223,12 @@
                 </div>
 
                 <!-- Enterprise Package -->
-                <div class="col-md-6 gradient-border col-lg-4" data-plan="monthly">
+                <div class="col-md-6 gradient-border col-lg-4  my-md-0 my-3" data-plan="monthly">
                   <div class="pricing-card h-100 text-center p-4 card-enterprise">
                     <h4>Enterprise Package</h4>
                     <p>Best for large-scale operations</p>
                     <h2>RM 2,099/month</h2>
                     <p class="text-muted">Billed monthly</p>
-                    <select class="form-select mb-3">
-                      <option>RM 22,788/yearly</option>
-                      <option>RM 2,099/monthly</option>
-                    </select>
                     <button class="btn w-100 mb-4">Contact Us for a Quote</button>
                     <ul class="features-list text-start">
                       <li>✔ 12 AI agents</li>
