@@ -16,9 +16,94 @@
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
+  <header class="sticky-top top-0">
+    <nav class="navbar navbar-expand-lg shadow  p-2  ">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/images/logo-removebg.png" alt="Logo" class="me-2 img-fliud" />
+            </a>
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar items -->
+            <div class="collapse navbar-collapse justify-content-md-between" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-md-5 mb-2 mb-lg-0">
+                    <!-- Dropdown menu for Product -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="productDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <!-- <ul class="dropdown-menu" aria-labelledby="productDropdown">
+                            <li>
+                                <a class="dropdown-item" href="ai-agent.html">Create Your AI Agent</a>
+
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="train_your_ai_agent.html">Train Your AI Agent</a>
+
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Multi_Agent_Integration.html">Multi-Agent
+                                    Integration</a>
+
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Profile and Role Setup</a>
+
+                            </li>
+                        </ul> -->
+                    </li>
+                    <!-- Dropdown menu for AI Agent -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ai_Agent.html">AI Agent</a>
+                    </li>
+                    <!-- Dropdown menu for Q&A -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="qaDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            FAQs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="qaDropdown">
+                            <li>
+                                <a class="dropdown-item" href="faqOne.html">FAQ One</a>
+
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="faqTwo.html">FAQ Two</a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- Pricing -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chat with Us</a>
+                    </li>
+                </ul>
+
+                <!-- Right-side buttons -->
+                <div class="d-flex align-items-md-center align-items-start gap-3 flex-md-row flex-column ms-lg-3">
+                    <a href="#" class="nav-link">Help</a>
+                    <a href="login.html" class="nav-link">Log in</a>
+
+                    <div class="btn ">
+                        <a href="login.html" class="codepen-button "><span>Sign up for free</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+</header>
   <main>
     <div class="pricing-section">
       <section class="section pricing-parent  pb-5" id="pricing-plans">
