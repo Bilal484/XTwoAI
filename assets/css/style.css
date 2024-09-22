@@ -17,13 +17,13 @@ h2 {
   
     transition: 1s all ease;
 
-    &:hover {
+    /* &:hover {
         cursor: pointer;
         background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-    }
+    } */
 
 }
 
@@ -31,27 +31,29 @@ h1 {
     color: var(--heading);
     transition: 1s all ease;
 
-    &:hover {
+    /* &:hover {
        
         cursor: pointer;
         background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-    }
+    } */
 }
 
 .card-title {
-    background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+    /* background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
     -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    background-clip: text; */
+    /* color: transparent; */
+    color: var(--heading);
+
     transition: 1s all ease;
 
-    &:hover {
+    /* &:hover {
         color: var(--heading);
         cursor: pointer;
-    }
+    } */
 }
 
 .card_bg_color {
@@ -230,7 +232,7 @@ main {
     .gradient-border {
         border-radius: 20px;
         transition: .5s all ease;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 
         &:hover {
             box-shadow:
