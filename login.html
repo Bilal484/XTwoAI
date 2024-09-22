@@ -14,62 +14,87 @@
 
 </head>
 
-<body>
+<body class="sigin-page">
   <header>
     <!-- place navbar here -->
   </header>
-  <main>
-    <div class="container d-flex justify-content-center align-items-center my-5">
-      <div class="card sign-up-card text-center">
-        <!-- Logo -->
-        <!-- <img src="assets/images/logo-removebg.png" height="20px"   alt="Logo" > -->
+  <main style="border-radius: 20px;">
 
-        <!-- Title -->
-        <h2>Log In</h2>
-        <p>Welcome back! Please log in to your account.</p>
+    <div class="wrapper">
+      <div class="form-wrapper sign-in">
+        <form action="">
+          <h2>Login</h2>
+          <div class="d-flex gap-3  flex-column">
+            <button class="btn btn-google btn-lg btn-custom">
+              <img width="30" height="30" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" /> Log
+              in with Google
+            </button>
+            <button class="btn btn-apple btn-lg btn-custom">
+              <img width="30" height="30" src="https://img.icons8.com/deco/50/mac-os.png" alt="mac-os" /> Log in with
+              Apple
+            </button>
+          </div>
 
-        <!-- Social Login Buttons -->
-        <div class="d-grid button-three gap-3 mb-4">
-          <button class="btn btn-google btn-lg btn-custom">
-            <img width="30" height="30" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" /> Log
-            in with Google
-          </button>
-          <button class="btn btn-apple btn-lg btn-custom">
-            <img width="30" height="30" src="https://img.icons8.com/deco/50/mac-os.png" alt="mac-os" /> Log in with
-            Apple
-          </button>
-          <button class="btn btn-outline-light btn-lg btn-custom">Log in with Single Sign-On</button>
-        </div>
-
-        <!-- Form -->
-        <form>
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Email" required>
+          <div class="input-group">
+            <input style="border-radius: 7px;" placeholder="Username" type="text" required>
+            <!-- <label for="">Username</label> -->
           </div>
-          <div class="mb-3">
-            <input type="password" class="form-control" placeholder="Password" required>
+          <div class="input-group">
+            <input style="border-radius: 7px;" placeholder="Password" type="password" required>
+            <!-- <label for="">Password</label> -->
           </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="rememberMe">
-            <label class="form-check-label" for="rememberMe">Remember me</label>
+          <div class="remember">
+            <label><input type="checkbox"> Remember me</label>
           </div>
-          <button type="submit" class="btn btn-custom btn-lg w-100">Log In</button>
+          <button type="submit">Login</button>
+          <div class="signUp-link">
+            <p>Don't have an account? <a href="#" class="signUpBtn-link">Sign Up</a></p>
+          </div>
         </form>
-
-        <!-- Terms and Signup Link -->
-        <div class="mt-3">
-          <small>By logging in, you agree to our <a href="#">Terms of Service</a>.</small>
-        </div>
-        <div class="mt-2">
-          <small>Don't have an account? <a href="signUp.html">Sign up</a></small>
-        </div>
+      </div>
+      <div class="form-wrapper sign-up">
+        <form action="">
+          <h2>Sign Up</h2>
+          <div class="input-group">
+            <input style="border-radius: 7px;" type="text" placeholder="Username" required>
+            <!-- <label for="">Username</label> -->
+          </div>
+          <div class="input-group">
+            <input style="border-radius: 7px;" type="email" placeholder="Email" required>
+            <!-- <label for="">Email</label> -->
+          </div>
+          <div class="input-group">
+            <input style="border-radius: 7px;" type="password" placeholder="Password" required>
+            <!-- <label for="">Password</label> -->
+          </div>
+          <div class="remember">
+            <label><input type="checkbox"> I agree to the terms & conditions</label>
+          </div>
+          <button type="submit">Sign Up</button>
+          <div class="signUp-link">
+            <p>Already have an account? <a href="#" class="signInBtn-link">Sign In</a></p>
+          </div>
+        </form>
       </div>
     </div>
+
   </main>
   <footer>
     <!-- place footer here -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
+
+  <script>
+    const signInBtnLink = document.querySelector('.signInBtn-link');
+    const signUpBtnLink = document.querySelector('.signUpBtn-link');
+    const wrapper = document.querySelector('.wrapper');
+    signUpBtnLink.addEventListener('click', () => {
+      wrapper.classList.toggle('active');
+    });
+    signInBtnLink.addEventListener('click', () => {
+      wrapper.classList.toggle('active');
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
   </script>

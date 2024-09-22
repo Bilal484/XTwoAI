@@ -1,106 +1,149 @@
-.sign-up-card {
-  max-width: 400px;
-  /* background-color: #2a2a2a;    */
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-  .button-three button {
-    background: rgb(217, 217, 217);
-    color: black;
-    border-radius: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sigin-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background: white;
+  box-shadow: 0 0 100px var(--background-color);
+  border-radius: 20px;
+  padding: 40px;
+  overflow: hidden;
+  color: black;
+}
+
+/* .wrapper:hover {
+  animation: animate 1s linear infinite;
+} */
+
+/* @keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
   }
+} */
 
-  .button-three button:hover {
-    background: rgb(232, 232, 232);
-  }
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease-in-out;
+}
 
+.wrapper.active .form-wrapper.sign-in {
+  transform: translateY(-450px);
+}
 
+.wrapper .form-wrapper.sign-up {
+  position: absolute;
+  top: 450px;
+  left: 0;
+}
 
-  .logo {
-    width: 30px;
-    height: 30px;
-    /* border-radius: 50%; */
-  }
+.wrapper.active .form-wrapper.sign-up {
+  transform: translateY(-450px);
+}
 
-  .btn-google {
-    background-color: white;
-    color: black;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+h2 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
 
-  .btn-google img {
-    margin-right: 10px;
-  }
+.input-group {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
+}
 
-  .btn-apple {
-    background-color: black;
-    color: white;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
 
-  .btn-apple img {
-    margin-right: 10px;
-  }
+.input-group input {
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 5px;
+  background: black;
+  /* border-radius: 10px; */
+  border: none;
+  outline: none;
+}
 
-  .btn-custom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f88501 !important;
-    color: white !important;
+/* .input-group input:focus~label,
+.input-group input:valid~label {
+  top: -5px;
+} */
 
-    &:hover {
-      background-color: var(--background-light) !important;
-      color: black !important;
+.remember {
+  margin: -5px 0 15px 5px;
+}
 
-    }
-  }
+.remember label {
+  color: black;
+  font-size: 14px;
+}
 
-  .btn-custom img {
-    margin-right: 10px;
-  }
+.remember label input {
+  accent-color: var(--heading);
+}
 
-  .form-control:focus,
-  .form-check-input:focus {
+button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: var(--heading);
+  box-shadow: 0 0 10px var(--heading);
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
 
-    border: 3px solid var(--background-color);
+.signUp-link {
+  font-size: 14px;
+  text-align: center;
+  margin: 15px 0;
+}
 
-  }
+.signUp-link p {
+  color: black;
+}
 
+.signUp-link p a {
+  color: var(--heading);
+  text-decoration: none;
+  font-weight: 500;
+}
 
-  .btn-danger {
-    background-color: var(--heading);
-    border: none;
-  }
-
-  .btn-danger:hover {
-    background-color: var(--background-color);
-  }
-
-  a {
-    color: #ff416c;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 576px) {
-    .sign-up-card {
-      width: 100%;
-      padding: 1.5rem;
-    }
-
-    .btn-lg {
-      font-size: 1rem;
-    }
-  }
+.signUp-link p a:hover {
+  text-decoration: underline;
 }
